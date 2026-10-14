@@ -1,0 +1,151 @@
+
+.continer{
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: 
+    "header"
+    "card-U"
+    "card-A"
+    "card-M";
+    gap: 5%;
+    background-color: aliceblue;
+} 
+.header{
+    display: grid;
+    place-items: center;
+}
+.header-p{
+     text-align: center;
+}
+.card-U{
+    border: 1px solid rgb(94, 206, 254);
+    border-radius: 5px;
+    background-color:  rgb(225, 246, 255); 
+    grid-area: card-U;
+    display: grid;
+    grid-template-areas: 
+    "card-U-h2 card-U-h2 card-U-h2 card-U-a card-U-a2"
+    "card-U-p card-U-p card-U-p card-U-p card-U-p"
+   "card-U-p card-U-p card-U-p card-U-p card-U-p"
+    "card-U-p card-U-p card-U-p card-U-p card-U-p";
+} 
+.card-U-h2{
+    grid-area: card-U-h2;
+}
+.card-U-a{
+    grid-area: card-U-a;
+     text-decoration: none;
+}
+.card-U-a2{
+    grid-area: card-U-a2;
+}
+.c.card-U-p{
+    grid-area: card-U-p;
+}
+.card-A{
+    border: 1px solid rgb(61, 252, 185);
+    border-radius: 5px;
+    background-color: rgb(224, 252, 242); 
+    grid-area: card-A;
+    display: grid;
+    grid-template-areas: 
+    "card-A-h2 card-A-h2 card-A-h2 card-A-a card-A-a2"
+    "card-A-p card-A-p card-A-p card-A-p card-A-p"
+   "card-A-p card-A-p card-A-p card-A-p card-A-p"
+    "card-A-p card-A-p card-A-p card-A-p card-A-p";
+   
+} 
+.card-A-h2{
+    grid-area: card-A-h2;
+}
+.card-A-a{
+    grid-area: card-A-a;
+     text-decoration: none;
+}
+.card-A-a2{
+    grid-area: card-A-a2;
+}
+.c.card-A-p{
+    grid-area: card-A-p;
+}
+.card-M{
+    border: 1px solid rgb(254, 149, 93);
+    border-radius: 5px;
+    background-color: rgb(253, 235, 225); 
+    grid-area: card-M;
+    display: grid;
+    grid-template-areas: 
+    "card-M-h2 card-M-h2 card-M-h2 card-M-a card-M-a2"
+    "card-M-p card-M-p card-M-p card-M-p card-M-p"
+   "card-M-p card-M-p card-M-p card-M-p card-M-p"
+    "card-M-p card-M-p card-M-p card-M-p card-M-p";
+   
+   
+}
+.card-M-h2{
+    grid-area: card-M-h2;
+}
+.card-M-a{
+    grid-area: card-M-a;
+     text-decoration: none;
+}
+.card-M-a2{
+    grid-area: card-M-a2;
+}
+.c.card-M-p{
+    grid-area: card-M-p;
+} 
+.card-U:hover{
+    transform: scale(1.10);
+}
+.card-A:hover{
+    transform: scale(1.10);
+}
+.card-M:hover{
+    transform: scale(1.10);
+}
+#card-U-id:target{
+    border: 1px solid rgb(27, 27, 50);
+    background-color:rgb(27, 27, 50); 
+    color: white;
+}
+#card-A-id:target{
+    border: 1px solid rgb(27, 27, 50);
+    background-color:rgb(27, 27, 50); 
+    color: white;
+}
+#card-M-id:target{
+    border: 1px solid rgb(27, 27, 50);
+    background-color:rgb(27, 27, 50); 
+    color: white;
+}
+.card-U-p::first-letter{
+    font-size: xx-large;
+    color: rgb(94, 206, 254);
+}
+.card-A-p::first-letter{
+    font-size: xx-large;
+    color: rgb(61, 252, 185);
+}
+.card-M-p::first-letter{
+    font-size: xx-large;
+    color: rgb(254, 149, 93);
+}
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.card-U:has(input:checked) {
+    display: none;
+}
+.card-A:has(input:checked) {
+    display: none;
+}
+.card-M:has(input:checked) {
+    display: none;
+}
